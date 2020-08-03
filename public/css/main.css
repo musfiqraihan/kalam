@@ -1,0 +1,451 @@
+:root{
+  --mainBlue:#3498db;
+  --transparentBlue:rgba(64,172,241,0.7);
+  --mainWhite:#FFFFFF;
+  --mainBlack:#292F36;
+  --mainGrey:rgba(216,214,214);
+  --mainYellow:#f1c40f;
+}
+/*head style*/
+*{
+	padding:0;
+	margin:0;
+	font-family: 'Montserrat', sans-serif;
+}
+/*preloader*/
+.preloader{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--mainWhite);
+  z-index: 999;
+}
+.hidePreloader{
+  display: none!important;
+}
+/*end preloader*/
+
+/*head 1st part start*/
+.head{
+	height:23px;
+  width: auto;
+	background:var(--mainBlue);
+}
+.head .new{
+	position:absolute;
+	top:0;
+	color:var(--mainWhite);
+	display:flex;
+	font-weight:bold;
+	margin-left:0px;
+	text-transform:uppercase;
+	padding-top:3px;
+  padding-left:3px;
+  padding-right: 5px;
+	background-color:#EAB543;
+  border-right: 1px solid var(--orange);
+}
+.head .newshow{
+	color:var(--mainWhite);
+	text-transform:capitalize;
+	font-size:16px;
+  margin-top: 3px;
+  margin-left: 125px;
+}
+.color-font{
+  color:#ff7675;
+}
+
+/*head 1st part end*/
+
+/*navbar*/
+.navbar{
+  background: #e3f2fd;
+  height: 55px;
+  border-bottom: 2px solid #008ed6;
+}
+.navbar > a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-left:-10px;
+  transition-property: color;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+.navbar > a:hover{
+  color: var(--mainBlack);
+}
+.navbar-brand img{
+  width:50px;
+  height:50px;
+}
+.navbar-icon{
+  font-size: 2rem;
+  color: var(--mainBlue);
+}
+.navbar-toggler{
+  outline-color:var(--mainBlue)!important;
+}
+.nav-link{
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.nav-link:hover{
+  color: var(--mainBlue);
+}
+.nav-icon{
+  font-size: 1.5rem;
+  color: var(--mainBlue);
+  text-decoration: none!important;
+  transition-property: color;
+  transition-duration: 2s;
+  padding-right: 10px;
+  transition-timing-function: linear;
+}
+.nav-icon:hover{
+  color: var(--mainBlack);
+}
+.bar{
+  font-size: 30px;
+  padding-right: 5px;
+}
+/*end navbar*/
+
+
+/*social icons*/
+.social-icons > p {
+  font-size: 0.9rem;
+}
+.social-icons-dash{
+  font-size: 0.8rem;
+}
+.font-dash{
+  color:#6a89cc;
+  margin-right: 5px;
+}
+.adv-search{
+  float:right;
+  margin-top:2px;
+}
+.adv-search > a{
+  text-decoration: none;
+  margin-top:2px;
+}
+.input-group-text{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/*end social icons*/
+
+
+
+
+
+
+/* slider */
+.height-max{
+    min-height: calc(100vh - 85px);
+    background: url('../images/toyota_jeep.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.coverpage{
+  clip-path:polygon(0 0,100% 0,100% 95%,50% 100%,0 95%);
+  color: var(--mainWhite);
+}
+.text-place{
+  margin-top:250px;
+}
+.text-color{
+  color: #686de0;
+}
+/*end slider*/
+
+
+/*section title*/
+.section-title-special{
+  background: var(--transparentBlue);
+  color: var(--mainWhite);
+  padding: 0.5rem 2rem;
+  clip-path: polygon(10% 0,100% 0, 90% 100%, 0 100%);
+
+}
+/*end section title*/
+
+
+/*skills*/
+.skills-underline-blue{
+  width: 5rem;
+  height: 0.3rem;
+  background: var(--info);
+  margin: 1rem auto;
+  border-radius: 5px;
+}
+.skills-underline-white{
+  width: 5rem;
+  height: 0.3rem;
+  background: var(--white);
+  margin: 1rem auto;
+  border-radius: 5px;
+}
+/*end skills*/
+
+
+
+/*brand*/
+
+.brand-list{
+  border: 1px solid #535c68;
+  border-radius: 10px;
+  height:auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.car-img-in{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  height: 110px;
+  width: 110px;
+  padding: 10px;
+}
+
+/*end brand*/
+
+
+
+/*question*/
+.question{
+  background: url('../images/question.jpg')center/cover fixed no-repeat;
+}
+.question-grey{
+  background: rgba(79,109,122,0.75);
+}
+.question-icon{
+  font-size: 4rem;
+  color: var(--mainBlue);
+  transition: all 0.5s ease-in-out;
+}
+.question-icon:hover{
+  transform: translateY(-10%);
+  color: var(--mainBlue);
+}
+.question-info{
+  color: var(--mainWhite);
+}
+/*end question*/
+
+
+
+
+
+/*feature part*/
+.feature{
+  background: #ECF0F1;
+}
+.car-card{
+  border-radius: 0!important;
+}
+.car-img{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.car-value{
+  background: var(--mainBlue);
+  color: var(--mainWhite);
+  clip-path:polygon(15% 0,85% 0,100% 100%,0 100%);
+  transition: all 1s linear;
+}
+.car-value:hover{
+  clip-path:polygon(0% 0,100% 0,100% 100%,0 100%);
+}
+.car-price{
+  font-size: 0.8em;
+}
+/*end feature*/
+
+
+
+
+
+/*review*/
+.ghap-review{
+  border-width: 2px;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*super cars*/
+.super-car-text > h6{
+  text-align: center;
+  margin-top: 5px;
+}
+.super-car-img{
+  height: 160px;
+}
+/*end super cars*/
+
+
+/*service part*/
+.car-service-content{
+  list-style: none;
+}
+.car-service-content > li{
+  margin:10px;
+}
+.service-font-color{
+  color:#44bd32;
+}
+.car-service-image{
+  height: 280px;
+  width:330px;
+}
+.service-car-card{
+  background:#f1f2f6;
+  text-align: center;
+  transition: all 1s linear;
+}
+.service-car-card:hover,.service-car-card > a:hover,.service-car-card > i:hover{
+  background:#DC143C;
+  color: white;
+  transition: all 1s linear;
+}
+.service-car-card > a{
+  text-decoration: none;
+  color:black;
+  transition: all 1s linear;
+}
+.font-size {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+/*end service part*/
+
+
+
+/*Email subscribe*/
+.email-image{
+  height:35vh;
+  background: url('../images/email.jpg')center/cover fixed no-repeat;
+}
+
+.form-check{
+  color: var(--mainWhite);
+}
+.form-check-label{
+  font-size: 12px!important;
+  cursor: pointer;
+}
+.email-button{
+  background:var(--transparentBlue);
+  transition: all 1s linear;
+}
+
+/*end Email subscribe*/
+
+
+
+
+
+/*contact form start*/
+.call-contact .call {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--mainBlack);
+}
+.contact-time {
+    font-size: 16px;
+}
+.mail-contact {
+  margin-top: 20px;
+}
+.call-font-color{
+  color:#44bd32;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.call-number{
+  font-size: 40px;
+}
+.email-link >a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.contact-title{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.text-size{
+  font-size: 18px!important;
+}
+.error {
+    color: red;
+    font-weight: 400;
+    display: block;
+    padding: 6px 0;
+    font-size: 14px;
+}
+
+.form-control.error {
+    border-color: red;
+    padding: .375rem .75rem;
+}
+/*contact form end*/
+
+
+
+
+
+
+
+
+/*footer*/
+.page-footer{
+  background:#ecf0f1;
+  padding-top: 10px;
+}
+.footer{
+  background:#57606f;
+  height: 10vh;
+}
+.footer-icon{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--mainYellow);
+  transition: all 1s ease-in-out;
+  margin-top: 15px;
+}
+.footer-icon:hover{
+  color: var(--mainBlue);
+}
+.footer-copyright{
+  background: #2f3542;
+  color:white!important;
+}
+.footer-image-box{
+  width: 350px;
+  margin: auto;
+}
+.footer-copyright > a {
+  color:white!important;
+  text-decoration: none;
+}
+.text-footer >a{
+  text-decoration: none;
+}
+/*end footer*/

@@ -1,0 +1,88 @@
+
+/*******************large devices only*****************/
+@media (min-width:1200px) {
+
+
+}
+/*******************medium devices only*****************/
+@media (min-width:992px) and (max-width:1199px) {
+  /* second header
+  .navbar-nav > li{
+    padding-left:0px;
+    padding-right:0px;
+  }
+  .navbar > a{
+    font-size: 1.4rem;
+  }
+  .navbar-icon{
+    font-size: 1rem;
+    color: var(--mainBlue);
+  }
+  /* end second header*/
+
+}
+
+/*******************small devices only*****************/
+@media (min-width:768px) and (max-width:991px) {
+  /*first head*/
+
+  .head .newshow{
+  	font-size:13px;
+  }
+
+  .title{
+    font-size: 3rem;
+  }
+
+}
+
+/*******************extra small devices only*****************/
+@media (max-width:767px) {
+    /*first head*/
+  .head{
+  	height:22px;
+  }
+  .head .new{
+  	font-size:12px;
+    padding-bottom: 4px;
+  }
+  .head .newshow{
+    font-size:10px;
+    margin-left: 96px;
+  }
+
+}
+
+
+/*******************super extra small devices only*****************/
+@media (max-width:479px) {
+    /*first head*/
+  .head{
+    height:17px;
+  }
+  .head .new{
+    font-size:8px;
+    padding-bottom: 2px;
+  }
+  .head .newshow{
+    font-size:8px;
+    margin-left:68px;
+    margin-bottom: 5px;
+  }
+}
+
+
+@media (max-width:350px) {
+    /*first head*/
+  .head{
+    height:15px;
+  }
+  .head .new{
+    font-size:7px;
+    padding-bottom:2px;
+  }
+  .head .newshow{
+    font-size:8px;
+    margin-left:61px;
+  }
+}
