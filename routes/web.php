@@ -16,6 +16,23 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+///new page
+Route::get('/kalam/dst','FormController@form')->name('newpage');
+
+
+
+//json data pass
+Route::get('/getdistricts/{id}', 'FormController@getdistricts');
+Route::get('/getupazilas/{id}', 'FormController@getupazilas');
+
+
+
+
+
+
+
+
 //admin panel users category=========================
 Route::get('superadmin/add/users/addcategory','superadmin\SuperAdminController@addcatgory')->name('AddCategoryAdmin');
 Route::post('superadmin/add/users/storecategory','superadmin\SuperAdminController@storecatgory');
