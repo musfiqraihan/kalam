@@ -17,6 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+//image routes
+Route::get('/add/image','ImageController@addimage')->name('add.image');
+Route::post('/store/image','ImageController@storeimage')->name('store.image');
+Route::get('/show/image','ImageController@showimage')->name('show.image');
+Route::get('/edit/image/{id}','ImageController@editimage');
+Route::post('/update/image/','ImageController@updateimage');
+Route::get('/delete/image/{id}', 'ImageController@deleteimage');
+
+
+
+
 ///new page
 Route::get('/kalam/dst','FormController@form')->name('newpage');
 
